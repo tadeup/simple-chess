@@ -1,7 +1,7 @@
 {
   "name": "just-chess",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A no-nonsense pass-and-play chess board with a clock.",
   "license": "GPL-3.0-or-later",
   "type": "module",
