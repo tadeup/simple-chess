@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-13T23:55:14.273Z",
+        "reason": "Claude and the finish reviewer: the detector reads index.html without the stylesheet (it is imported by src/main.ts and bundled), so every role measured 16px; rendered sizes are 26px card title, 21px page title, 19px sheet titles, 16px body, 14px section labels, verified in review captures phone-06 and phone-08"
+      }
+    ]
+  }
+}

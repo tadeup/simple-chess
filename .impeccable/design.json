@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-14T03:05:19.656Z",
+  "title": "Design System: Just Chess",
+  "extensions": {
+    "colorMeta": {
+      "brass": {
+        "role": "primary",
+        "displayName": "Brass",
+        "canonical": "#d4a24c",
+        "oklch": "oklch(74.251% 0.119 78.664)",
+        "tonalRamp": [
+          "oklch(15% 0.119 78.664)",
+          "oklch(26.429% 0.119 78.664)",
+          "oklch(37.857% 0.119 78.664)",
+          "oklch(49.286% 0.119 78.664)",
+          "oklch(60.714% 0.119 78.664)",
+          "oklch(72.143% 0.119 78.664)",
+          "oklch(83.571% 0.119 78.664)",
+          "oklch(95% 0.119 78.664)"
+        ]
+      },
+      "brass-press": {
+        "role": "primary",
+        "displayName": "Brass Press",
+        "canonical": "#bf8e3c",
+        "oklch": "oklch(67.875% 0.115 77.378)",
+        "tonalRamp": [
+          "oklch(15% 0.115 77.378)",
+          "oklch(26.429% 0.115 77.378)",
+          "oklch(37.857% 0.115 77.378)",
+          "oklch(49.286% 0.115 77.378)",
+          "oklch(60.714% 0.115 77.378)",
+          "oklch(72.143% 0.115 77.378)",
+          "oklch(83.571% 0.115 77.378)",
+          "oklch(95% 0.115 77.378)"
+        ]
+      },
+      "on-brass": {
+        "role": "primary",
+        "displayName": "On Brass",
+        "canonical": "#1c160c",
+        "oklch": "oklch(20.429% 0.021 79.931)",
+        "tonalRamp": [
+          "oklch(15% 0.021 79.931)",
+          "oklch(26.429% 0.021 79.931)",
+          "oklch(37.857% 0.021 79.931)",
+          "oklch(49.286% 0.021 79.931)",
+          "oklch(60.714% 0.021 79.931)",
+          "oklch(72.143% 0.021 79.931)",
+          "oklch(83.571% 0.021 79.931)",
+          "oklch(95% 0.021 79.931)"
+        ]
+      },
+      "flag-red": {
+        "role": "secondary",
+        "displayName": "Flag Red",
+        "canonical": "#d4473f",
+        "oklch": "oklch(59.458% 0.179 27.171)",
+        "tonalRamp": [
+          "oklch(15% 0.179 27.171)",
+          "oklch(26.429% 0.179 27.171)",
+          "oklch(37.857% 0.179 27.171)",
+          "oklch(49.286% 0.179 27.171)",
+          "oklch(60.714% 0.179 27.171)",
+          "oklch(72.143% 0.179 27.171)",
+          "oklch(83.571% 0.179 27.171)",
+          "oklch(95% 0.179 27.171)"
+        ]
+      },
+      "low-time-red": {
+        "role": "secondary",
+        "displayName": "Low-Time Red",
+        "canonical": "#f08a84",
+        "oklch": "oklch(74.12% 0.125 24.101)",
+        "tonalRamp": [
+          "oklch(15% 0.125 24.101)",
+          "oklch(26.429% 0.125 24.101)",
+          "oklch(37.857% 0.125 24.101)",
+          "oklch(49.286% 0.125 24.101)",
+          "oklch(60.714% 0.125 24.101)",
+          "oklch(72.143% 0.125 24.101)",
+          "oklch(83.571% 0.125 24.101)",
+          "oklch(95% 0.125 24.101)"
+        ]
+      },
+      "dot-black": {
+        "role": "neutral",
+        "displayName": "Dot Black",
+        "canonical": "#0d0c0b",
+        "oklch": "oklch(15.514% 0.003 67.627)",
+        "tonalRamp": [
+          "oklch(15% 0.003 67.627)",
+          "oklch(26.429% 0.003 67.627)",
+          "oklch(37.857% 0.003 67.627)",
+          "oklch(49.286% 0.003 67.627)",
+          "oklch(60.714% 0.003 67.627)",
+          "oklch(72.143% 0.003 67.627)",
+          "oklch(83.571% 0.003 67.627)",
+          "oklch(95% 0.003 67.627)"
+        ]
+      },
+      "knob": {
+        "role": "neutral",
+        "displayName": "Knob",
+        "canonical": "#f6f4f0",
+        "oklch": "oklch(96.758% 0.006 84.566)",
+        "tonalRamp": [
+          "oklch(15% 0.006 84.566)",
+          "oklch(26.429% 0.006 84.566)",
+          "oklch(37.857% 0.006 84.566)",
+          "oklch(49.286% 0.006 84.566)",
+          "oklch(60.714% 0.006 84.566)",
+          "oklch(72.143% 0.006 84.566)",
+          "oklch(83.571% 0.006 84.566)",
+          "oklch(95% 0.006 84.566)"
+        ]
+      },
+      "knob-off": {
+        "role": "neutral",
+        "displayName": "Knob Off",
+        "canonical": "#cfcac3",
+        "oklch": "oklch(84.104% 0.011 76.588)",
+        "tonalRamp": [
+          "oklch(15% 0.011 76.588)",
+          "oklch(26.429% 0.011 76.588)",
+          "oklch(37.857% 0.011 76.588)",
+          "oklch(49.286% 0.011 76.588)",
+          "oklch(60.714% 0.011 76.588)",
+          "oklch(72.143% 0.011 76.588)",
+          "oklch(83.571% 0.011 76.588)",
+          "oklch(95% 0.011 76.588)"
+        ]
+      },
+      "charcoal-ground": {
+        "role": "neutral",
+        "displayName": "Charcoal Ground",
+        "canonical": "#1b1a18",
+        "oklch": "oklch(21.813% 0.004 84.588)",
+        "tonalRamp": [
+          "oklch(15% 0.004 84.588)",
+          "oklch(26.429% 0.004 84.588)",
+          "oklch(37.857% 0.004 84.588)",
+          "oklch(49.286% 0.004 84.588)",
+          "oklch(60.714% 0.004 84.588)",
+          "oklch(72.143% 0.004 84.588)",
+          "oklch(83.571% 0.004 84.588)",
+          "oklch(95% 0.004 84.588)"
+        ]
+      },
+      "charcoal-bar": {
+        "role": "neutral",
+        "displayName": "Charcoal Bar",
+        "canonical": "#262422",
+        "oklch": "oklch(26.174% 0.005 67.618)",
+        "tonalRamp": [
+          "oklch(15% 0.005 67.618)",
+          "oklch(26.429% 0.005 67.618)",
+          "oklch(37.857% 0.005 67.618)",
+          "oklch(49.286% 0.005 67.618)",
+          "oklch(60.714% 0.005 67.618)",
+          "oklch(72.143% 0.005 67.618)",
+          "oklch(83.571% 0.005 67.618)",
+          "oklch(95% 0.005 67.618)"
+        ]
+      },
+      "charcoal-raised": {
+        "role": "neutral",
+        "displayName": "Charcoal Raised",
+        "canonical": "#322f2c",
+        "oklch": "oklch(30.725% 0.007 67.569)",
+        "tonalRamp": [
+          "oklch(15% 0.007 67.569)",
+          "oklch(26.429% 0.007 67.569)",
+          "oklch(37.857% 0.007 67.569)",
+          "oklch(49.286% 0.007 67.569)",
+          "oklch(60.714% 0.007 67.569)",
+          "oklch(72.143% 0.007 67.569)",
+          "oklch(83.571% 0.007 67.569)",
+          "oklch(95% 0.007 67.569)"
+        ]
+      },
+      "charcoal-raised-2": {
+        "role": "neutral",
+        "displayName": "Charcoal Raised 2",
+        "canonical": "#3e3a36",
+        "oklch": "oklch(35.114% 0.009 67.535)",
+        "tonalRamp": [
+          "oklch(15% 0.009 67.535)",
+          "oklch(26.429% 0.009 67.535)",
+          "oklch(37.857% 0.009 67.535)",
+          "oklch(49.286% 0.009 67.535)",
+          "oklch(60.714% 0.009 67.535)",
+          "oklch(72.143% 0.009 67.535)",
+          "oklch(83.571% 0.009 67.535)",
+          "oklch(95% 0.009 67.535)"
+        ]
+      },
+      "clock-idle-bg": {
+        "role": "neutral",
+        "displayName": "Clock Idle Slab",
+        "canonical": "#2d2a27",
+        "oklch": "oklch(28.712% 0.007 67.546)",
+        "tonalRamp": [
+          "oklch(15% 0.007 67.546)",
+          "oklch(26.429% 0.007 67.546)",
+          "oklch(37.857% 0.007 67.546)",
+          "oklch(49.286% 0.007 67.546)",
+          "oklch(60.714% 0.007 67.546)",
+          "oklch(72.143% 0.007 67.546)",
+          "oklch(83.571% 0.007 67.546)",
+          "oklch(95% 0.007 67.546)"
+        ]
+      },
+      "clock-idle-fg": {
+        "role": "neutral",
+        "displayName": "Clock Idle Numerals",
+        "canonical": "#a39d96",
+        "oklch": "oklch(69.901% 0.012 71.847)",
+        "tonalRamp": [
+          "oklch(15% 0.012 71.847)",
+          "oklch(26.429% 0.012 71.847)",
+          "oklch(37.857% 0.012 71.847)",
+          "oklch(49.286% 0.012 71.847)",
+          "oklch(60.714% 0.012 71.847)",
+          "oklch(72.143% 0.012 71.847)",
+          "oklch(83.571% 0.012 71.847)",
+          "oklch(95% 0.012 71.847)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "#ece9e4",
+        "oklch": "oklch(93.496% 0.007 80.721)",
+        "tonalRamp": [
+          "oklch(15% 0.007 80.721)",
+          "oklch(26.429% 0.007 80.721)",
+          "oklch(37.857% 0.007 80.721)",
+          "oklch(49.286% 0.007 80.721)",
+          "oklch(60.714% 0.007 80.721)",
+          "oklch(72.143% 0.007 80.721)",
+          "oklch(83.571% 0.007 80.721)",
+          "oklch(95% 0.007 80.721)"
+        ]
+      },
+      "ash": {
+        "role": "neutral",
+        "displayName": "Ash",
+        "canonical": "#aaa49d",
+        "oklch": "oklch(72.168% 0.012 71.853)",
+        "tonalRamp": [
+          "oklch(15% 0.012 71.853)",
+          "oklch(26.429% 0.012 71.853)",
+          "oklch(37.857% 0.012 71.853)",
+          "oklch(49.286% 0.012 71.853)",
+          "oklch(60.714% 0.012 71.853)",
+          "oklch(72.143% 0.012 71.853)",
+          "oklch(83.571% 0.012 71.853)",
+          "oklch(95% 0.012 71.853)"
+        ]
+      },
+      "ash-faint": {
+        "role": "neutral",
+        "displayName": "Ash Faint",
+        "canonical": "#827c75",
+        "oklch": "oklch(58.95% 0.013 71.807)",
+        "tonalRamp": [
+          "oklch(15% 0.013 71.807)",
+          "oklch(26.429% 0.013 71.807)",
+          "oklch(37.857% 0.013 71.807)",
+          "oklch(49.286% 0.013 71.807)",
+          "oklch(60.714% 0.013 71.807)",
+          "oklch(72.143% 0.013 71.807)",
+          "oklch(83.571% 0.013 71.807)",
+          "oklch(95% 0.013 71.807)"
+        ]
+      },
+      "board-wood-light": {
+        "role": "board",
+        "displayName": "Wood Light Square",
+        "canonical": "#f0d9b5",
+        "oklch": "oklch(89.514% 0.054 78.984)",
+        "tonalRamp": [
+          "oklch(15% 0.054 78.984)",
+          "oklch(26.429% 0.054 78.984)",
+          "oklch(37.857% 0.054 78.984)",
+          "oklch(49.286% 0.054 78.984)",
+          "oklch(60.714% 0.054 78.984)",
+          "oklch(72.143% 0.054 78.984)",
+          "oklch(83.571% 0.054 78.984)",
+          "oklch(95% 0.054 78.984)"
+        ]
+      },
+      "board-wood-dark": {
+        "role": "board",
+        "displayName": "Wood Dark Square",
+        "canonical": "#b58863",
+        "oklch": "oklch(66.146% 0.075 60.406)",
+        "tonalRamp": [
+          "oklch(15% 0.075 60.406)",
+          "oklch(26.429% 0.075 60.406)",
+          "oklch(37.857% 0.075 60.406)",
+          "oklch(49.286% 0.075 60.406)",
+          "oklch(60.714% 0.075 60.406)",
+          "oklch(72.143% 0.075 60.406)",
+          "oklch(83.571% 0.075 60.406)",
+          "oklch(95% 0.075 60.406)"
+        ]
+      },
+      "board-green-light": {
+        "role": "board",
+        "displayName": "Green Light Square",
+        "canonical": "#ebecd0",
+        "oklch": "oklch(93.497% 0.037 108.763)",
+        "tonalRamp": [
+          "oklch(15% 0.037 108.763)",
+          "oklch(26.429% 0.037 108.763)",
+          "oklch(37.857% 0.037 108.763)",
+          "oklch(49.286% 0.037 108.763)",
+          "oklch(60.714% 0.037 108.763)",
+          "oklch(72.143% 0.037 108.763)",
+          "oklch(83.571% 0.037 108.763)",
+          "oklch(95% 0.037 108.763)"
+        ]
+      },
+      "board-green-dark": {
+        "role": "board",
+        "displayName": "Green Dark Square",
+        "canonical": "#739552",
+        "oklch": "oklch(62.784% 0.101 130.814)",
+        "tonalRamp": [
+          "oklch(15% 0.101 130.814)",
+          "oklch(26.429% 0.101 130.814)",
+          "oklch(37.857% 0.101 130.814)",
+          "oklch(49.286% 0.101 130.814)",
+          "oklch(60.714% 0.101 130.814)",
+          "oklch(72.143% 0.101 130.814)",
+          "oklch(83.571% 0.101 130.814)",
+          "oklch(95% 0.101 130.814)"
+        ]
+      },
+      "board-blue-light": {
+        "role": "board",
+        "displayName": "Blue Light Square",
+        "canonical": "#dee3e6",
+        "oklch": "oklch(91.287% 0.007 233.648)",
+        "tonalRamp": [
+          "oklch(15% 0.007 233.648)",
+          "oklch(26.429% 0.007 233.648)",
+          "oklch(37.857% 0.007 233.648)",
+          "oklch(49.286% 0.007 233.648)",
+          "oklch(60.714% 0.007 233.648)",
+          "oklch(72.143% 0.007 233.648)",
+          "oklch(83.571% 0.007 233.648)",
+          "oklch(95% 0.007 233.648)"
+        ]
+      },
+      "board-blue-dark": {
+        "role": "board",
+        "displayName": "Blue Dark Square",
+        "canonical": "#8ca2ad",
+        "oklch": "oklch(69.884% 0.03 229.38)",
+        "tonalRamp": [
+          "oklch(15% 0.03 229.38)",
+          "oklch(26.429% 0.03 229.38)",
+          "oklch(37.857% 0.03 229.38)",
+          "oklch(49.286% 0.03 229.38)",
+          "oklch(60.714% 0.03 229.38)",
+          "oklch(72.143% 0.03 229.38)",
+          "oklch(83.571% 0.03 229.38)",
+          "oklch(95% 0.03 229.38)"
+        ]
+      },
+      "board-gray-light": {
+        "role": "board",
+        "displayName": "Gray Light Square",
+        "canonical": "#dcdad6",
+        "oklch": "oklch(88.881% 0.006 84.568)",
+        "tonalRamp": [
+          "oklch(15% 0.006 84.568)",
+          "oklch(26.429% 0.006 84.568)",
+          "oklch(37.857% 0.006 84.568)",
+          "oklch(49.286% 0.006 84.568)",
+          "oklch(60.714% 0.006 84.568)",
+          "oklch(72.143% 0.006 84.568)",
+          "oklch(83.571% 0.006 84.568)",
+          "oklch(95% 0.006 84.568)"
+        ]
+      },
+      "board-gray-dark": {
+        "role": "board",
+        "displayName": "Gray Dark Square",
+        "canonical": "#a19d97",
+        "oklch": "oklch(69.759% 0.01 78.263)",
+        "tonalRamp": [
+          "oklch(15% 0.01 78.263)",
+          "oklch(26.429% 0.01 78.263)",
+          "oklch(37.857% 0.01 78.263)",
+          "oklch(49.286% 0.01 78.263)",
+          "oklch(60.714% 0.01 78.263)",
+          "oklch(72.143% 0.01 78.263)",
+          "oklch(83.571% 0.01 78.263)",
+          "oklch(95% 0.01 78.263)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgb(255 255 255 / 0.07)",
+        "tonalRamp": [
+          "rgb(255 255 255 / 0.02)",
+          "rgb(255 255 255 / 0.04)",
+          "rgb(255 255 255 / 0.06)",
+          "rgb(255 255 255 / 0.07)",
+          "rgb(255 255 255 / 0.1)",
+          "rgb(255 255 255 / 0.14)",
+          "rgb(255 255 255 / 0.2)",
+          "rgb(255 255 255 / 0.3)"
+        ]
+      },
+      "arrow-blue": {
+        "role": "board",
+        "displayName": "Arrow Blue",
+        "canonical": "rgb(0 48 136)",
+        "oklch": "oklch(34.758% 0.154 261.422)",
+        "tonalRamp": [
+          "oklch(15% 0.154 261.422)",
+          "oklch(26.429% 0.154 261.422)",
+          "oklch(37.857% 0.154 261.422)",
+          "oklch(49.286% 0.154 261.422)",
+          "oklch(60.714% 0.154 261.422)",
+          "oklch(72.143% 0.154 261.422)",
+          "oklch(83.571% 0.154 261.422)",
+          "oklch(95% 0.154 261.422)"
+        ],
+        "note": "Engine arrows at fill-opacity 0.78 / 0.45 / 0.30 for lines 1 / 2 / 3."
+      }
+    },
+    "typographyMeta": {
+      "clock": {
+        "displayName": "Clock",
+        "purpose": "Clock numerals in the player bars; bar height x 0.46 (about 24-37px), tabular."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Result card outcome."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sheet titles (19px), settings page title (21px), paused cover (20px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Settings rows and button labels (buttons at 600, primary at 700)."
+      },
+      "player-name": {
+        "displayName": "Player Name",
+        "purpose": "Name in the player bar; Ash while waiting, Bone on turn."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Settings group titles and the post-game / review status line."
+      },
+      "tool-label": {
+        "displayName": "Tool Label",
+        "purpose": "Word under each toolbar icon."
+      },
+      "eval": {
+        "displayName": "Eval",
+        "purpose": "Engine evaluation in the analysis header: +0.84, −1.20, #3, #−2, or 1–0 / 0–1 on a mated position."
+      },
+      "engine-line": {
+        "displayName": "Engine Line",
+        "purpose": "SAN engine lines in Ash, first move and its number in 700 Bone; clamped to 2 lines (1 under 700px tall)."
+      }
+    },
+    "boardThemes": [
+      {
+        "id": "wood",
+        "light": "#f0d9b5",
+        "dark": "#b58863",
+        "last": "rgb(155 199 0 / 0.41)",
+        "selected": "rgb(20 85 30 / 0.5)",
+        "dot": "rgb(20 85 30 / 0.5)",
+        "ring": "rgb(20 85 0 / 0.3)",
+        "over": "rgb(20 85 30 / 0.28)"
+      },
+      {
+        "id": "green",
+        "light": "#ebecd0",
+        "dark": "#739552",
+        "last": "rgb(255 255 51 / 0.46)",
+        "selected": "rgb(255 255 51 / 0.5)",
+        "dot": "rgb(0 0 0 / 0.16)",
+        "ring": "rgb(0 0 0 / 0.16)",
+        "over": "rgb(0 0 0 / 0.14)"
+      },
+      {
+        "id": "blue",
+        "light": "#dee3e6",
+        "dark": "#8ca2ad",
+        "last": "rgb(155 199 0 / 0.41)",
+        "selected": "rgb(20 85 30 / 0.5)",
+        "dot": "rgb(20 85 30 / 0.5)",
+        "ring": "rgb(20 85 0 / 0.3)",
+        "over": "rgb(20 85 30 / 0.28)"
+      },
+      {
+        "id": "gray",
+        "light": "#dcdad6",
+        "dark": "#a19d97",
+        "last": "rgb(255 209 0 / 0.42)",
+        "selected": "rgb(42 108 172 / 0.45)",
+        "dot": "rgb(28 52 82 / 0.42)",
+        "ring": "rgb(28 52 82 / 0.32)",
+        "over": "rgb(28 52 82 / 0.22)"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "sheet-lift",
+        "value": "0 -12px 40px rgb(0 0 0 / 0.4)",
+        "purpose": "Bottom sheets, cast upward over the board."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 24px 64px rgb(0 0 0 / 0.5)",
+        "purpose": "Centred result card."
+      },
+      {
+        "name": "float",
+        "value": "0 8px 24px rgb(0 0 0 / 0.35)",
+        "purpose": "Toast and the paused play button."
+      },
+      {
+        "name": "promo-option",
+        "value": "0 2px 8px rgb(0 0 0 / 0.35)",
+        "purpose": "Round promotion choices over the board."
+      },
+      {
+        "name": "slider-thumb",
+        "value": "0 1px 5px rgb(0 0 0 / 0.45)",
+        "purpose": "Range slider thumb."
+      },
+      {
+        "name": "switch-knob",
+        "value": "0 1px 3px rgb(0 0 0 / 0.35)",
+        "purpose": "Switch knob."
+      },
+      {
+        "name": "lifted-piece",
+        "value": "drop-shadow(0 calc(var(--board) * 0.012) calc(var(--board) * 0.014) rgb(0 0 0 / 0.38))",
+        "purpose": "Filter on a piece while dragged."
+      },
+      {
+        "name": "scrolled-header",
+        "value": "0 1px 0 rgb(255 255 255 / 0.07), 0 8px 16px -8px rgb(0 0 0 / 0.5)",
+        "purpose": "Settings header after its page scrolls."
+      },
+      {
+        "name": "selected-ring",
+        "value": "0 0 0 2px #262422, 0 0 0 4px #d4a24c",
+        "purpose": "Offset brass ring on the chosen board-colour swatch."
+      },
+      {
+        "name": "last-used-ring",
+        "value": "inset 0 0 0 2px #d4a24c",
+        "purpose": "Last-used time-control tile."
+      },
+      {
+        "name": "gauge-ring",
+        "value": "inset 0 0 0 1px rgb(255 255 255 / 0.14)",
+        "purpose": "Keeps the Dot Black gauge track visible on the ground."
+      },
+      {
+        "name": "score-ring",
+        "value": "inset 0 0 0 1px rgb(255 255 255 / 0.16)",
+        "purpose": "Keeps Black-favouring score pills visible on the ground."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Default easing: piece slides, sheets, switches, the flipped-bar turn."
+      },
+      {
+        "name": "ease-turn",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Board rotation between turns."
+      },
+      {
+        "name": "piece-slide",
+        "value": "140ms",
+        "purpose": "Tap-move slide and captured-piece fade."
+      },
+      {
+        "name": "piece-enter",
+        "value": "160ms ease-out",
+        "purpose": "Fade-in of newly placed pieces."
+      },
+      {
+        "name": "piece-spin",
+        "value": "260ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default orientation mode: every piece spins 180 degrees in place toward the player to move, starting ~160ms after a tap-move or 60ms after a drop; skipped under reduced motion."
+      },
+      {
+        "name": "board-turn",
+        "value": "380ms",
+        "purpose": "Alternate \"board turns each move\" mode: Rotation with a dip to scale 0.7 between 30% and 70%; coordinates fade out over 100ms."
+      },
+      {
+        "name": "drag-lift",
+        "value": "scale(1.45) touch / scale(1.08) mouse",
+        "purpose": "Lift of a dragged piece; the origin keeps a 28% ghost. On touch the piece rides above the finger toward the up direction of its owner (down the screen when flipped)."
+      },
+      {
+        "name": "press",
+        "value": "120ms ease",
+        "purpose": "Button and tile press: darker fill and scale 0.98-0.985."
+      },
+      {
+        "name": "state",
+        "value": "160ms ease",
+        "purpose": "Clock lighting, name and dot dimming, switch track."
+      },
+      {
+        "name": "dialog",
+        "value": "260ms",
+        "purpose": "Sheet slide-up, page slide-in, card scale-in from 0.95, scrim fade."
+      },
+      {
+        "name": "toast",
+        "value": "200ms",
+        "purpose": "Toast rise and fade."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms",
+        "purpose": "All transitions and animations under prefers-reduced-motion."
+      },
+      {
+        "name": "gauge",
+        "value": "300ms cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Eval gauge width; White share from lichess winning chances, 2 / (1 + exp(-0.00368208 * cp)) - 1."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "portrait-margin",
+        "value": "600px",
+        "purpose": "Portrait width at which the board gains 28px side margins."
+      },
+      {
+        "name": "landscape",
+        "value": "width > 1.15 x height and width >= 560px",
+        "purpose": "Board left, side column right (computed in JS, not a media query)."
+      },
+      {
+        "name": "short-landscape",
+        "value": "(orientation: landscape) and (max-height: 560px)",
+        "purpose": "Sheets widen to 720px; time-control grid goes to 6 columns."
+      },
+      {
+        "name": "short-screen",
+        "value": "(max-height: 700px)",
+        "purpose": "Engine lines clamp to one line; row padding 8px to 5px."
+      }
+    ],
+    "boardOverlays": [
+      {
+        "name": "engine-arrows",
+        "layer": "SVG, viewBox 0 0 8 8, z-index 4 (above pieces and coordinates, below a dragged piece)",
+        "fill": "rgb(0 48 136)",
+        "opacity": [
+          0.78,
+          0.45,
+          0.3
+        ],
+        "bestLine": {
+          "shaft": 0.2,
+          "headWidth": 0.52,
+          "headLength": 0.46
+        },
+        "otherLines": {
+          "shaft": 0.14,
+          "headWidth": 0.4,
+          "headLength": 0.36
+        },
+        "order": "weaker lines first; best drawn on top"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one brass action on a surface: Start game, Rematch.",
+      "html": "<button class=\"ds-btn ds-btn--primary\">Rematch</button>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-btn { width: 280px; min-height: 50px; padding: 0 18px; border: 0; border-radius: 12px; background: #322f2c; color: #ece9e4; font: inherit; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; transition: background-color 0.12s ease, transform 0.12s ease; } .ds-btn:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; } .ds-btn--primary { background: #d4a24c; color: #1c160c; font-weight: 700; } .ds-btn--primary:active { background: #bf8e3c; transform: scale(0.985); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Raised charcoal action for every non-primary choice.",
+      "html": "<button class=\"ds-btn\">New game</button>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-btn { width: 280px; min-height: 50px; padding: 0 18px; border: 0; border-radius: 12px; background: #322f2c; color: #ece9e4; font: inherit; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; transition: background-color 0.12s ease, transform 0.12s ease; } .ds-btn:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; } .ds-btn:active { background: #3e3a36; transform: scale(0.985); }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Transparent tertiary action with an optional 20px stroke icon.",
+      "html": "<button class=\"ds-btn-quiet\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"13\" height=\"13\" rx=\"2\"/><path d=\"M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2\"/></svg>Copy PGN</button>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; } .ds-btn-quiet .ds-icon { width: 20px; height: 20px; } .ds-btn-quiet { width: 280px; min-height: 44px; padding: 0 18px; border: 0; border-radius: 12px; background: transparent; color: #aaa49d; font: inherit; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; transition: background-color 0.12s ease; } .ds-btn-quiet:active { background: rgb(255 255 255 / 0.06); } .ds-btn-quiet:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; }"
+    },
+    {
+      "name": "Player Bar",
+      "kind": "custom",
+      "refersTo": "clock-active",
+      "description": "Dot and name on the left, clock slab on the right. The side to move is lit; the waiting side is dimmed; under 10 s the lit clock turns red.",
+      "html": "<div class=\"ds-stack\"><section class=\"ds-player\"><span class=\"ds-name\"><span class=\"ds-dot ds-dot--b\"></span>Black</span><div class=\"ds-clock\">4:12</div></section><section class=\"ds-player is-turn\"><span class=\"ds-name\"><span class=\"ds-dot ds-dot--w\"></span>White</span><div class=\"ds-clock\">3:58</div></section><section class=\"ds-player is-turn\"><span class=\"ds-name\"><span class=\"ds-dot ds-dot--w\"></span>White</span><div class=\"ds-clock is-low\">0:08</div></section></div>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-stack { display: grid; gap: 8px; width: 360px; background: #1b1a18; padding: 8px 0; } .ds-player { height: 60px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 10px; } .ds-name { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; letter-spacing: 0.005em; color: #aaa49d; transition: color 0.16s ease; } .is-turn .ds-name { color: #ece9e4; } .ds-dot { width: 10px; height: 10px; border-radius: 50%; opacity: 0.55; transition: opacity 0.16s ease; } .is-turn .ds-dot { opacity: 1; } .ds-dot--w { background: #ece9e4; } .ds-dot--b { background: #0d0c0b; box-shadow: 0 0 0 1px rgb(255 255 255 / 0.35); } .ds-clock { min-width: 4.1em; height: 48px; padding: 0 0.42em; border-radius: 9px; display: flex; align-items: center; justify-content: flex-end; font-size: 28px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; background: #2d2a27; color: #a39d96; transition: background-color 0.16s ease, color 0.16s ease; } .is-turn .ds-clock { background: #ece9e4; color: #1b1a18; } .is-turn .ds-clock.is-low { background: #d4473f; color: #fff; }"
+    },
+    {
+      "name": "Toolbar",
+      "kind": "nav",
+      "refersTo": "tool",
+      "description": "Up to five labelled stroke-icon tools: bottom edge in portrait, directly above the player bar in landscape.",
+      "html": "<nav class=\"ds-toolbar\"><button class=\"ds-tool\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg><span>New</span></button><button class=\"ds-tool\" disabled><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9 14 4 9l5-5\"/><path d=\"M4 9h10.5a5.5 5.5 0 0 1 0 11H11\"/></svg><span>Undo</span></button><button class=\"ds-tool\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"6\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\"/><rect x=\"14\" y=\"5\" width=\"4\" height=\"14\" rx=\"1\"/></svg><span>Pause</span></button><button class=\"ds-tool\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 21V4\"/><path d=\"M5 4h12.5L15 8.5l2.5 4.5H5\"/></svg><span>End</span></button><button class=\"ds-tool\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg><span>Settings</span></button></nav>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; } .ds-toolbar { width: 400px; height: 60px; display: flex; align-items: stretch; justify-content: space-around; padding: 2px 6px 4px; background: #1b1a18; } .ds-tool { flex: 1 1 0; max-width: 104px; border: 0; border-radius: 14px; background: transparent; color: #aaa49d; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font: inherit; font-size: 11.5px; font-weight: 600; letter-spacing: 0.01em; cursor: pointer; transition: color 0.12s ease, background-color 0.12s ease; } .ds-tool:hover:not(:disabled) { color: #ece9e4; } .ds-tool:active:not(:disabled) { color: #ece9e4; background: rgb(255 255 255 / 0.07); } .ds-tool:disabled { opacity: 0.32; cursor: default; } .ds-tool:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; }"
+    },
+    {
+      "name": "Time-Control Tile",
+      "kind": "chip",
+      "refersTo": "time-control-tile",
+      "description": "Preset in the new-game sheet; the last-used preset wears an inset brass ring.",
+      "html": "<div class=\"ds-grid\"><button class=\"ds-tc\"><span class=\"ds-t\">1+0</span><span class=\"ds-k\">Bullet</span></button><button class=\"ds-tc is-last\"><span class=\"ds-t\">5+3</span><span class=\"ds-k\">Blitz</span></button><button class=\"ds-tc\"><span class=\"ds-t\">15+10</span><span class=\"ds-k\">Rapid</span></button></div>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-grid { width: 340px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 16px; background: #262422; } .ds-tc { height: 66px; border: 0; border-radius: 12px; background: #322f2c; color: #ece9e4; font: inherit; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; cursor: pointer; transition: background-color 0.12s ease, transform 0.12s ease; } .ds-tc:active { background: #3e3a36; transform: scale(0.98); } .ds-tc.is-last { box-shadow: inset 0 0 0 2px #d4a24c; } .ds-tc:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; } .ds-t { font-size: 21px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; } .ds-k { font-size: 12.5px; color: #aaa49d; }"
+    },
+    {
+      "name": "Settings Group",
+      "kind": "card",
+      "refersTo": "settings-group",
+      "description": "Rounded charcoal list of 58px rows with hairline dividers, holding radios and switches.",
+      "html": "<div class=\"ds-wrap\"><h3 class=\"ds-gt\">Play</h3><div class=\"ds-group\"><label class=\"ds-row\"><input class=\"ds-radio\" type=\"radio\" name=\"o\" checked><span class=\"ds-text\"><span class=\"ds-title\">Rotate each turn</span><span class=\"ds-desc\">The board turns to face whoever moves next.</span></span></label><label class=\"ds-row\"><span class=\"ds-text\"><span class=\"ds-title\">Show legal moves</span></span><input class=\"ds-switch\" type=\"checkbox\" checked></label><label class=\"ds-row\"><span class=\"ds-text\"><span class=\"ds-title\">Move sounds</span></span><input class=\"ds-switch\" type=\"checkbox\"></label></div></div>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-wrap { width: 360px; padding: 4px 12px 16px; background: #1b1a18; color: #ece9e4; } .ds-gt { margin: 18px 14px 8px; font-size: 14px; font-weight: 600; color: #aaa49d; } .ds-group { background: #262422; border-radius: 16px; overflow: hidden; } .ds-row { display: flex; align-items: center; gap: 14px; min-height: 58px; padding: 10px 16px; cursor: pointer; } .ds-row + .ds-row { border-top: 1px solid rgb(255 255 255 / 0.07); } .ds-row:active { background: rgb(255 255 255 / 0.04); } .ds-text { flex: 1; display: flex; flex-direction: column; gap: 2px; } .ds-title { font-size: 16px; font-weight: 500; } .ds-desc { font-size: 13.5px; color: #aaa49d; } .ds-switch { appearance: none; position: relative; width: 48px; height: 28px; margin: 0; border-radius: 14px; background: #3e3a36; cursor: pointer; transition: background-color 0.16s ease; } .ds-switch::after { content: \"\"; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: #cfcac3; box-shadow: 0 1px 3px rgb(0 0 0 / 0.35); transition: transform 0.2s var(--ds-ease), background-color 0.16s ease; } .ds-switch:checked { background: #d4a24c; } .ds-switch:checked::after { transform: translateX(20px); background: #f6f4f0; } .ds-radio { appearance: none; position: relative; width: 22px; height: 22px; margin: 0; border-radius: 50%; box-shadow: inset 0 0 0 2px #827c75; cursor: pointer; transition: box-shadow 0.14s ease; } .ds-radio:checked { box-shadow: inset 0 0 0 2px #d4a24c; } .ds-radio::after { content: \"\"; position: absolute; inset: 5px; border-radius: 50%; background: #d4a24c; transform: scale(0); transition: transform 0.16s var(--ds-ease); } .ds-radio:checked::after { transform: scale(1); } .ds-switch:focus-visible, .ds-radio:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; }"
+    },
+    {
+      "name": "Result Card",
+      "kind": "card",
+      "refersTo": "result-card",
+      "description": "Centred end-of-game card: headline outcome, reason, then the action stack.",
+      "html": "<div class=\"ds-card\"><h2 class=\"ds-h\">White wins</h2><p class=\"ds-r\">Checkmate &middot; 1&ndash;0</p><div class=\"ds-stack\"><button class=\"ds-b ds-b--p\">Rematch</button><button class=\"ds-b\">New game</button></div></div>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-card { width: 340px; background: #262422; color: #ece9e4; border-radius: 18px; padding: 26px 18px 14px; text-align: center; box-shadow: 0 24px 64px rgb(0 0 0 / 0.5); } .ds-h { margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.015em; } .ds-r { margin: 6px 0 22px; font-size: 15px; color: #aaa49d; } .ds-stack { display: grid; gap: 8px; } .ds-b { min-height: 50px; border: 0; border-radius: 12px; background: #322f2c; color: #ece9e4; font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; transition: background-color 0.12s ease, transform 0.12s ease; } .ds-b:active { background: #3e3a36; transform: scale(0.985); } .ds-b--p { background: #d4a24c; color: #1c160c; font-weight: 700; } .ds-b--p:active { background: #bf8e3c; } .ds-b:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; }"
+    },
+    {
+      "name": "Board Highlights (Wood)",
+      "kind": "custom",
+      "refersTo": "board-wood-light",
+      "description": "Wood squares with last-move wash, selected square, legal-move dot and capture ring.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-sq ds-l ds-last\"></div><div class=\"ds-sq ds-d ds-sel\"></div><div class=\"ds-sq ds-l ds-dot\"></div><div class=\"ds-sq ds-d ds-ring\"></div></div>",
+      "css": ".ds-board { width: 240px; display: grid; grid-template-columns: repeat(4, 60px); border-radius: 2px; overflow: hidden; } .ds-sq { height: 60px; position: relative; } .ds-l { background: #f0d9b5; } .ds-d { background: #b58863; } .ds-sq::after { content: \"\"; position: absolute; inset: 0; } .ds-last::after { background: rgb(155 199 0 / 0.41); } .ds-sel::after { background: rgb(20 85 30 / 0.5); } .ds-dot::after { background: radial-gradient(rgb(20 85 30 / 0.5) 18%, transparent 19%); } .ds-ring::after { background: radial-gradient(transparent 79%, rgb(20 85 0 / 0.3) 80%); }"
+    },
+    {
+      "name": "Analysis Panel",
+      "kind": "custom",
+      "refersTo": "engine-score-white",
+      "description": "Post-game engine header (eval, meta, winning-chances gauge) and up to three engine lines with score pills.",
+      "html": "<div class=\"ds-an\"><div class=\"ds-head\"><div class=\"ds-row\"><span class=\"ds-eval\">+0.84</span><span class=\"ds-meta\">Stockfish 19 · depth 22</span></div><div class=\"ds-gauge\"><div class=\"ds-gw\"></div></div></div><ol class=\"ds-lines\"><li class=\"ds-line\"><span class=\"ds-score is-w\">+0.84</span><span class=\"ds-mv\"><b>23. Nf3</b> Nc6 24. O-O Be7 25. Re1 O-O 26. h3</span></li><li class=\"ds-line\"><span class=\"ds-score is-w\">+0.31</span><span class=\"ds-mv\"><b>23. Bd3</b> Qd7 24. O-O Rd8 25. Qe2</span></li><li class=\"ds-line\"><span class=\"ds-score is-b\">−0.12</span><span class=\"ds-mv\"><b>23. Qh5</b> g6 24. Qe2 Bg7 25. O-O</span></li></ol></div>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-an { width: 360px; padding: 12px 10px; background: #1b1a18; color: #ece9e4; } .ds-head { display: grid; gap: 8px; } .ds-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; } .ds-eval { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; } .ds-meta { font-size: 13px; font-weight: 500; color: #aaa49d; font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-gauge { height: 8px; border-radius: 4px; overflow: hidden; background: #0d0c0b; box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.14); } .ds-gw { width: 62%; height: 100%; background: #ece9e4; transition: width 0.3s var(--ds-ease); } .ds-gauge:hover .ds-gw { width: 38%; } .ds-lines { margin: 0; padding: 6px 0 0; list-style: none; } .ds-line { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; } .ds-line + .ds-line { border-top: 1px solid rgb(255 255 255 / 0.07); } .ds-score { flex-shrink: 0; min-width: 56px; padding: 3px 6px; border-radius: 6px; font-size: 13px; font-weight: 700; line-height: 1.35; text-align: center; font-variant-numeric: tabular-nums; } .ds-score.is-w { background: #ece9e4; color: #1b1a18; } .ds-score.is-b { background: #0d0c0b; color: #ece9e4; box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16); } .ds-mv { min-width: 0; font-size: 14px; line-height: 1.5; color: #aaa49d; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; } .ds-mv b { color: #ece9e4; font-weight: 700; }"
+    },
+    {
+      "name": "Status Button",
+      "kind": "button",
+      "refersTo": "status-button",
+      "description": "Post-game status line as a quiet button; tapping it reopens the result card.",
+      "html": "<button class=\"ds-status\"><strong>White wins</strong>&nbsp;· Checkmate · 1–0<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></button>",
+      "css": ":host { --ds-ease: cubic-bezier(0.22, 1, 0.36, 1); font-family: system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif; } .ds-icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; } .ds-status { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 12px; background: none; font: inherit; font-size: 14px; font-weight: 600; line-height: 1.35; color: #aaa49d; font-variant-numeric: tabular-nums; cursor: pointer; } .ds-status strong { color: #ece9e4; font-weight: 700; } .ds-status .ds-icon { width: 16px; height: 16px; margin-right: -4px; } .ds-status:active { background: rgb(255 255 255 / 0.06); } .ds-status:focus-visible { outline: 2px solid #d4a24c; outline-offset: 2px; }"
+    },
+    {
+      "name": "Engine Arrows",
+      "kind": "custom",
+      "refersTo": "arrow-blue",
+      "description": "Three ranked engine arrows over wood squares; the best line is thicker and on top.",
+      "html": "<div class=\"ds-b\"><svg viewBox=\"0 0 4 4\" class=\"ds-arrows\"><polygon class=\"ds-a3\" points=\"0.55,3.55 2.29,1.80 2.39,1.90 2.5,1.5 2.10,1.61 2.20,1.71 0.45,3.45\"/><polygon class=\"ds-a2\" points=\"1.57,3.5 1.57,1.86 1.3,1.86 1.5,1.5 1.7,1.86 1.43,1.86 1.43,3.5\"/><polygon class=\"ds-a1\" points=\"0.4,3.5 0.4,0.96 0.24,0.96 0.5,0.5 0.76,0.96 0.6,0.96 0.6,3.5\" transform=\"translate(3 0)\"/></svg></div>",
+      "css": ".ds-b { position: relative; width: 240px; height: 240px; border-radius: 2px; background: repeating-conic-gradient(#b58863 0 25%, #f0d9b5 0 50%) 0 0 / 50% 50%; } .ds-arrows { position: absolute; inset: 0; width: 100%; height: 100%; } .ds-a1, .ds-a2, .ds-a3 { fill: rgb(0 48 136); } .ds-a1 { fill-opacity: 0.78; } .ds-a2 { fill-opacity: 0.45; } .ds-a3 { fill-opacity: 0.3; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Club Table at Night",
+    "overview": "A warm charcoal room with one lit wooden board in it. The chrome is dark, warm and recessive (charcoal ground and bars, brown-grey neutrals, never blue-grey) so the board and the running clock are the only things that read at a glance. The board itself is the category standard played straight: lichess wood squares, cburnett pieces, the familiar highlight vocabulary. Nothing about the board or its controls is reinvented, because the players should never have to learn anything.\n\nThe system is dense where it must be and empty everywhere else. The game screen holds exactly four kinds of thing: two player bars, the board, a toolbar of labelled stroke icons, and (only after a game ends) a single tappable status line. After a game the players can also switch into analysis, where an on-device Stockfish replaces the player bars with an evaluation header and up to three engine lines, and draws its candidate moves as blue arrows on the board. Overlays (time-control sheet, end-game sheet, result card, settings page) slide in over the board and leave again. Feel matters as much as look: pieces slide on a 140ms ease-out, a dragged piece lifts under the finger, after each move the pieces spin in place to face the player to move (or, in the alternate mode, the whole board dips and turns), and every move lands with a synthesized wooden \"tock\" whose pitch varies a few percent so repeated moves never sound mechanical. Capture, castle, check and game end each have their own voice (sharper wood, a double knock, a knock under a bell, a two-note chime); a short bright ping warns at 10 seconds.\n\nThe type is the platform's own sans (Roboto inside the Android WebView), chosen because this is an operated tool on a native device. Its one expressive use is the clock: heavy tabular numerals sized from the bar height so they read from arm's length.",
+    "keyCharacteristics": [
+      "Warm charcoal chrome that recedes; the board is the only light surface.",
+      "The lit clock is the turn indicator: an off-white slab for the side to move, a dim slab for the side waiting.",
+      "One brass accent, reserved for the primary action and chosen state.",
+      "Labelled 2px round-stroke SVG icons; no glyph or emoji icons.",
+      "Canon chess-app conventions at full fidelity, with motion and sound doing the polish."
+    ],
+    "rules": [
+      {
+        "name": "The One Light Rule",
+        "body": "The only light surfaces on the game screen are the board and the active clock. Chrome never gets a light fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Brass Is Earned Rule",
+        "body": "Brass marks the primary action or a chosen state, nothing else. It is never decoration, never a heading colour, never a background wash. Board highlights use the board theme's own colours, not the app accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Any digit that can change while you look at it is set in tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Ladder Rule",
+        "body": "Emphasis is a step up in weight or from Ash to Bone, never a new colour or an all-caps label.",
+        "section": "typography"
+      },
+      {
+        "name": "The Whole Square Rule",
+        "body": "The board size is floored to a multiple of 8px. Never let a layout produce fractional squares.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Board Rule",
+        "body": "Nothing on the game screen casts a shadow at rest. Depth is earned by floating (sheet, card, toast) or by being picked up (a dragged piece).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do let the lit clock carry whose turn it is: Bone slab for the side to move, dim slab for the side waiting, and dim the waiting player's name and dot with it.",
+      "Do keep chrome on the charcoal steps (ground, bar, raised, raised 2) and keep the board and the active clock as the only light surfaces.",
+      "Do reserve brass for the primary action and chosen state.",
+      "Do use tabular figures for every changing number.",
+      "Do draw icons as 24px SVG strokes (2px, round caps and joins) with a text label in the toolbar.",
+      "Do quantize the board to multiples of 8px and size bars and clock type from the board, not from fixed breakpoints.",
+      "Do give every move motion and sound: 140ms ease-out slides, a lifted drag, and the wood knock.",
+      "Do keep touch targets at least 44px.",
+      "Do leave pinch-zoom enabled; stop accidental gestures with `touch-action: none` on the board and `manipulation` on the body instead of locking the viewport.",
+      "Do honour reduced motion: every transition and animation collapses to 1ms."
+    ],
+    "donts": [
+      "Don't add avatars, ratings, chat, banners or a tab bar around the board; the player bar is a dot, a name, captures and a clock.",
+      "Don't put a status line on screen during normal play; it appears only after the game.",
+      "Don't offer engine analysis during a game; it is reachable only after the game ends.",
+      "Don't colour engine arrows with the app accent or per board theme; they are always Arrow Blue, ranked by opacity.",
+      "Don't use brass for decoration, headings or backgrounds, or for board highlights.",
+      "Don't use chess.com's signature green for any interface accent. The Green board theme is a board colour choice, not chrome.",
+      "Don't use red for anything but time trouble, flag-fall, and the check glow.",
+      "Don't set any text in Ash Faint; it is for non-text indicators.",
+      "Don't cast shadows on the game screen at rest, and never use hard offset shadows.",
+      "Don't add uppercase eyebrow labels or kickers above titles.",
+      "Don't treat the system face as a display face: if a brand or marketing surface is added, it needs its own type decision."
+    ]
+  }
+}

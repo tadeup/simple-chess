@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1b1a18" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="A no-nonsense chess board and clock for two players sharing one device." />
+    <title>Simple Chess</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body data-theme="wood">
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5" /><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11" /></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.6v14.8a.6.6 0 0 0 .92.5l11.7-7.4a.6.6 0 0 0 0-1L7.92 4.1a.6.6 0 0 0-.92.5z" /></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4" /><path d="M5 4h12.5L15 8.5l2.5 4.5H5" /></symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24">
+        <path
+          d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+        />
+        <circle cx="12" cy="12" r="3" />
+      </symbol>
+      <symbol id="i-prev" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol>
+      <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6" /><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11" /></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2" /><path d="M4 16a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2" /></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.8-3.8" /></symbol>
+    </svg>
+
+    <main class="app" id="app" data-layout="portrait">
+      <section class="player" id="bar-top"></section>
+      <div class="board-wrap">
+        <div class="board" id="board"></div>
+        <button class="paused" id="paused" type="button" hidden>
+          <span class="paused__icon"><svg class="icon"><use href="#i-play" /></svg></span>
+          <span class="paused__title">Paused</span>
+          <span class="paused__hint">Tap to resume</span>
+        </button>
+      </div>
+      <section class="player" id="bar-bottom"></section>
+      <button class="status" id="status" type="button" aria-live="polite" hidden></button>
+      <section class="engine-head" id="engine-head" aria-label="Engine evaluation">
+        <div class="engine-head__row">
+          <span class="engine-eval" id="engine-eval">0.00</span>
+          <span class="engine-meta" id="engine-meta">Stockfish 19</span>
+        </div>
+        <div class="gauge" aria-hidden="true"><div class="gauge__white" id="gauge-white"></div></div>
+      </section>
+      <ol class="engine-lines" id="engine-lines" aria-label="Best lines"></ol>
+      <nav class="toolbar" id="toolbar" aria-label="Game controls">
+        <button class="tool" type="button" data-action="new"><svg class="icon"><use href="#i-plus" /></svg><span>New</span></button>
+        <button class="tool" type="button" data-action="undo"><svg class="icon"><use href="#i-undo" /></svg><span>Undo</span></button>
+        <button class="tool" type="button" data-action="pause">
+          <svg class="icon"><use href="#i-pause" /></svg><span>Pause</span>
+        </button>
+        <button class="tool" type="button" data-action="end"><svg class="icon"><use href="#i-flag" /></svg><span>End</span></button>
+        <button class="tool" type="button" data-action="prev" hidden><svg class="icon"><use href="#i-prev" /></svg><span>Back</span></button>
+        <button class="tool" type="button" data-action="next" hidden><svg class="icon"><use href="#i-next" /></svg><span>Next</span></button>
+        <button class="tool" type="button" data-action="analyze" aria-pressed="false" hidden><svg class="icon"><use href="#i-search" /></svg><span>Analyze</span></button>
+        <button class="tool" type="button" data-action="settings"><svg class="icon"><use href="#i-gear" /></svg><span>Settings</span></button>
+      </nav>
+    </main>
+
+    <dialog class="sheet" id="sheet-new" tabindex="-1" autofocus aria-labelledby="new-title">
+      <div class="sheet__head">
+        <h2 class="sheet__title" id="new-title">New game</h2>
+        <button class="icon-btn" type="button" data-close aria-label="Close"><svg class="icon"><use href="#i-x" /></svg></button>
+      </div>
+      <p class="sheet__note" id="new-note" hidden>Starting a new game ends the current one.</p>
+      <div class="tc-grid" id="tc-grid"></div>
+      <button class="tc-custom" id="custom-toggle" type="button" aria-expanded="false" aria-controls="custom">
+        Custom<svg class="icon"><use href="#i-down" /></svg>
+      </button>
+      <div class="custom" id="custom" hidden>
+        <label class="slider">
+          <span class="slider__label">Minutes per side</span>
+          <output id="custom-min-out" for="custom-min">5 min</output>
+          <input type="range" id="custom-min" min="0" max="26" step="1" />
+        </label>
+        <label class="slider">
+          <span class="slider__label">Increment per move</span>
+          <output id="custom-inc-out" for="custom-inc">3 sec</output>
+          <input type="range" id="custom-inc" min="0" max="18" step="1" />
+        </label>
+        <label class="custom-option">
+          <span class="row__text"
+            ><span class="row__title">Fischer Random</span
+            ><span class="row__desc">Chess960: the back-rank pieces start in one of 960 shuffled setups. To castle, move the king onto its rook.</span></span
+          >
+          <input class="switch" type="checkbox" role="switch" id="custom-960" />
+        </label>
+        <button class="btn btn--primary" id="custom-start" type="button">Start game</button>
+      </div>
+    </dialog>
+
+    <dialog class="sheet" id="sheet-end" tabindex="-1" autofocus aria-labelledby="end-title">
+      <div class="sheet__head">
+        <h2 class="sheet__title" id="end-title">End the game</h2>
+        <button class="icon-btn" type="button" data-close aria-label="Close"><svg class="icon"><use href="#i-x" /></svg></button>
+      </div>
+      <div class="stack">
+        <button class="btn" type="button" data-end="resign-w"><span class="btn__piece wk"></span>White resigns</button>
+        <button class="btn" type="button" data-end="resign-b"><span class="btn__piece bk"></span>Black resigns</button>
+        <button class="btn" type="button" data-end="draw">Agree to a draw</button>
+      </div>
+    </dialog>
+
+    <dialog class="card" id="dlg-result" tabindex="-1" autofocus aria-labelledby="result-title">
+      <button class="icon-btn card__close" type="button" data-close aria-label="Close"><svg class="icon"><use href="#i-x" /></svg></button>
+      <h2 class="card__title" id="result-title">White wins</h2>
+      <p class="card__reason" id="result-reason">Checkmate · 1–0</p>
+      <div class="stack">
+        <button class="btn btn--primary" id="btn-rematch" type="button">Rematch</button>
+        <button class="btn" id="btn-analyze" type="button"><svg class="icon"><use href="#i-search" /></svg>Analyze the game</button>
+        <button class="btn" id="btn-new" type="button">New game</button>
+        <button class="btn btn--quiet" id="btn-pgn" type="button"><svg class="icon"><use href="#i-copy" /></svg>Copy PGN</button>
+      </div>
+    </dialog>
+
+    <dialog class="page" id="page-settings" tabindex="-1" autofocus aria-labelledby="settings-title">
+      <div class="page__scroll">
+        <div class="page__inner">
+          <header class="page__head">
+            <button class="icon-btn" type="button" data-close aria-label="Back"><svg class="icon"><use href="#i-back" /></svg></button>
+            <h2 class="page__title" id="settings-title">Settings</h2>
+          </header>
+
+          <h3 class="group-title" id="orientation-title">Board orientation</h3>
+          <div class="group" role="radiogroup" aria-labelledby="orientation-title">
+            <label class="row">
+              <input class="radio" type="radio" name="orientation" value="pieces" />
+              <span class="row__text"
+                ><span class="row__title">Pieces face the player to move</span
+                ><span class="row__desc">The board stays still and the pieces turn around after each move. For a device lying between you.</span></span
+              >
+            </label>
+            <label class="row">
+              <input class="radio" type="radio" name="orientation" value="rotate" />
+              <span class="row__text"
+                ><span class="row__title">Board turns each move</span
+                ><span class="row__desc">The whole board turns to face whoever moves next. For passing the phone back and forth.</span></span
+              >
+            </label>
+            <label class="row">
+              <input class="radio" type="radio" name="orientation" value="facing" />
+              <span class="row__text"
+                ><span class="row__title">Face to face</span
+                ><span class="row__desc">White's pieces face you and Black's face the far side, all game long.</span></span
+              >
+            </label>
+            <label class="row">
+              <input class="radio" type="radio" name="orientation" value="fixed" />
+              <span class="row__text"><span class="row__title">Fixed</span><span class="row__desc">White always at the bottom. Nothing turns.</span></span>
+            </label>
+          </div>
+
+          <h3 class="group-title" id="theme-title">Board colors</h3>
+          <div class="group group--pad">
+            <div class="swatches" id="swatches" role="radiogroup" aria-labelledby="theme-title"></div>
+          </div>
+
+          <h3 class="group-title">Play</h3>
+          <div class="group">
+            <label class="row"><span class="row__text"><span class="row__title">Show legal moves</span></span><input class="switch" type="checkbox" role="switch" data-setting="legalMoves" /></label>
+            <label class="row"><span class="row__text"><span class="row__title">Show coordinates</span></span><input class="switch" type="checkbox" role="switch" data-setting="coordinates" /></label>
+            <label class="row"><span class="row__text"><span class="row__title">Always promote to a queen</span></span><input class="switch" type="checkbox" role="switch" data-setting="autoQueen" /></label>
+            <label class="row"><span class="row__text"><span class="row__title">Show the undo button</span></span><input class="switch" type="checkbox" role="switch" data-setting="showUndo" /></label>
+          </div>
+
+          <h3 class="group-title">Feedback</h3>
+          <div class="group">
+            <label class="row"><span class="row__text"><span class="row__title">Move sounds</span></span><input class="switch" type="checkbox" role="switch" data-setting="sound" /></label>
+            <label class="row" id="row-haptics"><span class="row__text"><span class="row__title">Vibrate on move</span></span><input class="switch" type="checkbox" role="switch" data-setting="haptics" /></label>
+          </div>
+
+          <p class="about">
+            Simple Chess <span id="app-version">1.0.0</span>. Plays offline, with no account.<br />
+            Chess pieces by Colin M. L. Burnett (BSD license). Icons adapted from Lucide (ISC license).<br />
+            Game analysis by <a href="https://github.com/nmrugg/stockfish.js/tree/v19.0.1" target="_blank" rel="noopener">Stockfish 19</a>, free software
+            under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU GPL v3</a>. It runs on this device only.<br />
+            <a href="https://tadeup.github.io/simple-chess/privacy.html" target="_blank" rel="noopener">Privacy policy</a> · <a href="https://github.com/tadeup/simple-chess" target="_blank" rel="noopener">Source code</a>
+          </p>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

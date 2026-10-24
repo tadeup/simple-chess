@@ -1,0 +1,19 @@
+{
+  "appId": "com.tadeupassos.simplechess",
+  "appName": "Simple Chess",
+  "webDir": "dist",
+  "backgroundColor": "#1b1a18",
+  "android": {
+    "backgroundColor": "#1b1a18",
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "style": "DARK",
+      "initialViewportFitValueHint": "cover"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dev-server build only: the app loads the Vite dev server over plain HTTP on the local network.
+         Release builds never get this flag. -->
+    <application android:usesCleartextTraffic="true" />
+</manifest>
