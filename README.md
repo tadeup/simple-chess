@@ -58,7 +58,7 @@ Release builds are signed with the upload key described in `android/keystore.pro
 
 1. Decide the application ID before the first upload; it can never change afterwards. It is currently `com.tadeupassos.simplechess`. To change it, edit `appId` in `capacitor.config.json` plus `namespace`/`applicationId` in `android/app/build.gradle`, and move `MainActivity.java` to the matching package folder.
 2. Create the app in Play Console and keep **Play App Signing** on. Upload `app-release.aab`.
-3. Store listing: the 512×512 icon is `public/icons/icon-512.png`. Four phone screenshots (1080×1920 JPEG) are in `store/screenshots/`; regenerate them with `node scripts/store-shots.mjs` while `npx vite preview --port 4173` is running. Play also asks for a 1024×500 feature graphic, which isn't included.
+3. Store listing: the 512×512 icon is `public/icons/icon-512.png`. Screenshots are in `store/screenshots/`: four for phones (1080×1920), plus `tablet-7in/` (1920×1080) and `tablet-10in/` (2560×1440). Regenerate them with `node scripts/store-shots.mjs` while `npx vite preview --port 4173` is running. The 1024×500 feature graphic is `store/feature-graphic.jpg`, rendered by `node scripts/feature-graphic.mjs`.
 4. **Data safety:** the app collects and shares no data. Play Console still asks for a privacy policy URL.
 5. For each update, bump `versionCode` and `versionName` in `android/app/build.gradle` (and `version` in `package.json`).
 
