@@ -100,6 +100,10 @@ The app's own code can stay under your license, because it only talks to the eng
 
 To update the engine, run `npm pack stockfish@<version>`, copy the two `stockfish-*-lite-single.*` files and `Copying.txt` into `public/engine/`, then update the file name in `src/analysis/engine.ts` and the version, hashes and source link in `SOURCE.txt`.
 
+## License
+
+Copyright (C) 2026 Tadeu Passos. Simple Chess is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. See [LICENSE](LICENSE). Third-party components keep their own licenses, listed below.
+
 ## Credits
 
 The chess pieces are the cburnett set by Colin M. L. Burnett. Icons are adapted from Lucide. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
